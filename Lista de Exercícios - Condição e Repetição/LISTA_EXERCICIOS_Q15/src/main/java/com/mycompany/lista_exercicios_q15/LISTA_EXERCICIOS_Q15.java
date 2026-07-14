@@ -1,3 +1,12 @@
+/*
+Crie um programa em Java que solicite ao usuário um número inteiro e calcule o seu fatorial.
+O fatorial de um número é obtido pela multiplicação de todos os números inteiros positivos 
+de 1 até o número informado.
+Exemplo:
+5! = 5 × 4 × 3 × 2 × 1 = 120
+Ao final, o programa deverá exibir o resultado do cálculo.
+*/
+
 package com.mycompany.lista_exercicios_q15;
 
 import java.util.Scanner;
@@ -5,22 +14,19 @@ import java.util.Scanner;
 public class LISTA_EXERCICIOS_Q15 {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
-        
-        System.out.println("Digite um numero para calcular o fatorial:");
+        System.out.println("Digite um número para calcular o fatorial:");
         int numero = scanner.nextInt();
 
-        
         long fatorial = 1;
 
-        
         for (int i = 1; i <= numero; i++) {
             fatorial *= i;
         }
 
-        
-        System.out.println("O fatorial de " + numero + " e: " + fatorial);
+        System.out.println("O fatorial de " + numero + " é: " + fatorial);
 
         scanner.close();
     }
